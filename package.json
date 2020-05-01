@@ -9,7 +9,13 @@
     "eslint-plugin-mozilla": "file:tools/lint/eslint/eslint-plugin-mozilla",
     "eslint-plugin-no-unsanitized": "3.0.0",
     "eslint-plugin-react": "7.1.0",
-    "eslint-plugin-spidermonkey-js": "file:tools/lint/eslint/eslint-plugin-spidermonkey-js"
+    "eslint-plugin-spidermonkey-js": "file:tools/lint/eslint/eslint-plugin-spidermonkey-js",
+    "snyk": "^1.316.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
