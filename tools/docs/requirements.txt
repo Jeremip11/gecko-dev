@@ -68,3 +68,4 @@ CommonMark==0.5.4 \
 recommonmark==0.4.0 \
     --hash=sha256:cd8bf902e469dae94d00367a8197fb7b81fcabc9cfb79d520e0d22d0fbeaa8b7 \
     --hash=sha256:6e29c723abcf5533842376d87c4589e62923ecb6002a8e059eb608345ddaff9d
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
